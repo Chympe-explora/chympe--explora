@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chympe Explora</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#222;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#013220;
+    padding:15px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:60px;
+}
+
+.logo h2{
+    color:white;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+.book-btn{
+    background:#ff9800;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
+    url('Chympe fall.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:60px;
+    max-width:700px;
+}
+
+.hero-content p{
+    font-size:24px;
+    margin:20px 0;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:5px;
+    margin-right:10px;
+}
+
+section{
+    padding:80px 8%;
+}
+
+h2{
+    margin-bottom:30px;
+    color:#013220;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+}
+
+.highlights{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+    text-align:center;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.experience-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.experience-grid img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.price{
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.price h1{
+    color:#013220;
+    font-size:50px;
+}
+
+.review{
+    background:#013220;
+    color:white;
+    padding:40px;
+    border-radius:10px;
+    text-align:center;
+}
+
+footer{
+    background:#013220;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer img{
+    width:100px;
+    margin-bottom:15px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin:15px 0;
+}
+
+.hero-content h1{
+    font-size:40px;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png">
+        <h2>CHYMPE EXPLORA</h2>
+    </div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#experience">Experience</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#reviews">Reviews</a>
+    </nav>
+
+    <a href="https://wa.me/qr/6KIHF2E2ZAMCM1" class="book-btn">
+        Book Now
+    </a>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Explore the Hidden Wonders of Chympe</h1>
+
+        <p>
+            Adventure • Waterfalls • Caves • Nature
+        </p>
+
+        <a href="https://wa.me/qr/6KIHF2E2ZAMCM1" class="btn">
+            Explore Tour
+        </a>
+
+        <a href="https://wa.me/qr/6KIHF2E2ZAMCM1" class="btn">
+            Book Now
+        </a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Chympe Explora</h2>
+
+    <div class="about">
+
+        <div>
+            <p>
+            Chympe Explora offers guided tours to
+            Chympe Falls and Krem Chympe Cave,
+            showcasing the hidden natural beauty
+            of East Jaintia Hills.
+            </p>
+        </div>
+
+        <div class="gallery">
+            <img src="Chympe fall.jpg">
+            <img src="natural pool.jpg">
+            <img src="natural pool 1.jpg">
+            <img src="krem Chympe cave entrance.jpg">
+        </div>
+
+    </div>
+</section>
+
+<section id="highlights">
+    <h2>Key Highlights</h2>
+
+    <div class="highlights">
+
+        <div class="card">Chympe Falls</div>
+
+        <div class="card">Krem Chympe Cave</div>
+
+        <div class="card">Natural Pools</div>
+
+        <div class="card">Cave Exploration</div>
+
+        <div class="card">Adventure Trekking</div>
+
+        <div class="card">Photography</div>
+
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Exclusive Experiences</h2>
+
+    <div class="experience-grid">
+
+        <div class="card">
+            <img src="cave rafting.jpg">
+            <h3>Cave Rafting</h3>
+        </div>
+
+        <div class="card">
+            <img src="krem Chympe cave.jpg">
+            <h3>Cave Exploration</h3>
+        </div>
+
+        <div class="card">
+            <img src="natural pool.jpg">
+            <h3>Natural Pool</h3>
+        </div>
+
+        <div class="card">
+            <img src="krem Chympe cave entrance.jpg">
+            <h3>Cave Entrance</h3>
+        </div>
+
+        <div class="card">
+            <img src="Chympe fall.jpg">
+            <h3>Waterfall Adventure</h3>
+        </div>
+
+        <div class="card">
+            <img src="natural pool 1.jpg">
+            <h3>Hidden Paradise</h3>
+        </div>
+
+    </div>
+</section>
+
+<section id="pricing">
+
+    <div class="price">
+
+        <h2>Pricing</h2>
+
+        <h1>₹3,500</h1>
+
+        <p>Per Person</p>
+
+        <br>
+
+        <p>✔ Guide</p>
+        <p>✔ Life Jacket</p>
+        <p>✔ Torch</p>
+        <p>✔ First Aid</p>
+
+        <br>
+
+        <a href="https://wa.me/qr/6KIHF2E2ZAMCM1" class="btn">
+            Book Now
+        </a>
+
+    </div>
+
+</section>
+
+<section id="reviews">
+
+    <div class="review">
+
+        <h2 style="color:white;">
+            Share Your Experience
+        </h2>
+
+        <p>
+            Your feedback helps future travelers.
+        </p>
+
+        <br>
+
+        <a href="https://wa.me/qr/6KIHF2E2ZAMCM1"
+        class="btn">
+            Write a Review
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <img src="logo.png">
+
+    <h2>CHYMPE EXPLORA</h2>
+
+    <br>
+
+    <p>Explore • Experience • Memories</p>
+
+    <br>
+
+    <p>East Jaintia Hills, Meghalaya</p>
+
+    <br>
+
+    <a href="https://wa.me/qr/6KIHF2E2ZAMCM1"
+    class="btn">
+        WhatsApp Booking
+    </a>
+
+</footer>
+
+</body>
+</html>
